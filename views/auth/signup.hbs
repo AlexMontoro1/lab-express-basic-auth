@@ -1,0 +1,15 @@
+<div>
+    <h3>Sign Up just here !!</h3>
+    <form action="/auth/signup" method="post">
+        <label for="username">Create Username</label>
+        <input type="text" name="username">
+        <br>
+        <label for="password">Create Password</label>
+        <input type="password" name="password">
+        <br>
+        <button>Create Profile</button>
+        {{#if this.errorMessage}}
+        <p style="color: red">{{this.errorMessage}}</p>
+        {{/if}}
+    </form>
+</div>
